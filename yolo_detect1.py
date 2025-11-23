@@ -10,7 +10,7 @@ from ultralytics import YOLO
 # -----------------------------
 
 # Path to your trained YOLO model
-MODEL_PATH = "train/weights/best.pt"   # 🔹 Change this if needed
+MODEL_PATH = "weights/best.pt"   # 🔹 Change this if needed
 
 # Minimum confidence threshold
 CONF_THRESH = 0.5
@@ -142,3 +142,4 @@ if RECORD:
     recorder.release()
 cv2.destroyAllWindows()
 print(f"✅ Average FPS: {avg_fps:.2f}")
+
